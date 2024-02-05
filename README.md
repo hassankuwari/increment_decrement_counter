@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+## steps to do this project
+
+1. create react app install reducx and react-redux
+2. write html/jsx code + css in app.js to display ui.
+3. write actions which we are going to use in this app in action file.
+4. tell reducers to do this actions(write all the code in particular reducer).
+5. import all the written reducers in one single main reducer using combineReducer from redux.
+6. now create store.
+7. in created store import your main / rootReeducer in it.
+8. import store in index.js .
+9. wrap your entire app in index.js with provider tag using from react-redux.
+10. pass your store in this provider tag in index.js so that store will be connected to main app.js .
+11. now create myState in app.js and use useSelector tag from react-redux to pass myState in it also pass this   myState in value.
+12. now use dispatch to call actions in app.js .
+13. then write onClick function where you want to it to be execute.
+14. import your actions in app.js which you are going to use in onclick function so that with the help of dispatch it will call.
+15. pass the parameter which you want to be execute first in app.js on onClick function then pass this parameter in action which it is going to be use using payload also update that particular reducer by adding payload.
